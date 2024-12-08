@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Treasure Hunt</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <!-- CSS Dosyası Bağlantısı -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Find the Treasure Hunt</h1>
+    <div id="game-container">
+        <!-- Username Input -->
+        <div id="username-container">
+            <label for="username">Enter your name to begin:</label>
+            <input type="text" id="username" placeholder="Your Name">
+            <button class="start-button" onclick="startGame()">Start Game</button>
+        </div>
+
+        <!-- Game Information -->
+        <div id="game-info" style="display: none;">
+            <div id="question">
+                <p id="question-text">Hint: Click on the correct country to start!</p>
+            </div>
+            <div class="scoreboard">
+                <p id="correct-count">Correct Answers: 0</p>
+                <p id="wrong-count">Wrong Answers: 0</p>
+                <p id="hint-count">Hints Remaining: 5</p>
+                <p id="timer">Time Left: 180 seconds</p>
+            </div>
+            <button class="hint-button" onclick="showHint()">Use Hint</button>
+            <p id="hint-text"></p>
+        </div>
+
+        <!-- Map Container -->
+        <div id="map" style="width: 100%; height: 500px; margin-top: 20px;"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

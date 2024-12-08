@@ -1,0 +1,103 @@
+/* General Page Styles */
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background: linear-gradient(135deg, #f4e7d2, #c6a478); /* Treasure map-themed background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 20px;
+  color: #5a3e1e;
+  text-shadow: 2px 2px 4px #c6a478;
+}
+
+/* Username Input */
+#username-container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff8e7;
+  border: 2px solid #c6a478;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#username-container input {
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #c6a478;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#username-container button {
+  background: linear-gradient(to bottom, #e8c07a, #c6a478);
+  color: #fff;
+  border: 2px solid #a0794e;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#username-container button:hover {
+  background: linear-gradient(to bottom, #f1d5a3, #e8c07a);
+}
+
+/* Map Section */
+#map-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+#map {
+  height: 600px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 2px solid #c6a478;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Message */
+#game-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #fff3cd, #ffeeba);
+  border: 2px solid #ffeeba;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+  animation: fadeInOut 5s ease-in-out;
+  font-size: 1.2em;
+  color: #856404;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+
+
+
+
+
