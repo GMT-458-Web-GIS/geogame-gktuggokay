@@ -159,6 +159,8 @@ ________________________________________
   
 These interactions ensure the game remains dynamic, interactive, and engaging for players.
 
+## MY GEOGAME LINK: https://gmt-458-web-gis.github.io/geogame-gktuggokay/
+
 
 
 
